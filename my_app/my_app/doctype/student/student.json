@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "format:STD-{dept}-{###}",
+ "creation": "2026-07-17 14:06:45.792499",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "students_section",
+  "name1",
+  "dept",
+  "year",
+  "phone",
+  "reg_no",
+  "date",
+  "mark1",
+  "mark2",
+  "datas_column",
+  "document",
+  "amended_from",
+  "total",
+  "age",
+  "email",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "students_section",
+   "fieldtype": "Section Break",
+   "label": "STUDENTS"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "NAME"
+  },
+  {
+   "fieldname": "dept",
+   "fieldtype": "Data",
+   "label": "DEPT"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "YEAR"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "PHONE"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "DATE"
+  },
+  {
+   "fieldname": "mark1",
+   "fieldtype": "Int",
+   "label": "MARK1"
+  },
+  {
+   "fieldname": "mark2",
+   "fieldtype": "Int",
+   "label": "MARK2"
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Data",
+   "label": "DOCUMENT"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "STUDENT",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "TOTAL"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "AGE"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "EMAIL"
+  },
+  {
+   "fieldname": "reg_no",
+   "fieldtype": "Select",
+   "label": "REG_NO",
+   "options": "CSE-\nAIDS-\nMECH-\nEEE-\nECE-\nIT-"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "STATUS",
+   "options": "PENDING\nApproved"
+  },
+  {
+   "fieldname": "datas_column",
+   "fieldtype": "Column Break",
+   "label": "datas"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-20 11:33:12.579602",
+ "modified_by": "Administrator",
+ "module": "my_app",
+ "name": "STUDENT",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "student",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
